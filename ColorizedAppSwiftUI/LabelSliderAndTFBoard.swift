@@ -22,7 +22,6 @@ struct LabelSliderAndTFBoard: View {
                 .frame(width: 220)
                 .accentColor(sliderColor)
                 
-            
             TextField("", value: $sliderValue, formatter: NumberFormatter())
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.decimalPad)
