@@ -11,6 +11,7 @@
 		BD43B59C272D79EB00E9AADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43B59B272D79EB00E9AADB /* ContentView.swift */; };
 		BD43B59E272D79EC00E9AADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD43B59D272D79EC00E9AADB /* Assets.xcassets */; };
 		BD43B5A1272D79EC00E9AADB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD43B5A0272D79EC00E9AADB /* Preview Assets.xcassets */; };
+		BD4E9C6F272ED16100B9F65C /* LabelSliderAndTFBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4E9C6E272ED16100B9F65C /* LabelSliderAndTFBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BD43B59B272D79EB00E9AADB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD43B59D272D79EC00E9AADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD43B5A0272D79EC00E9AADB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD4E9C6E272ED16100B9F65C /* LabelSliderAndTFBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSliderAndTFBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BD43B599272D79EB00E9AADB /* ColorizedAppSwiftUIApp.swift */,
 				BD43B59B272D79EB00E9AADB /* ContentView.swift */,
+				BD4E9C6E272ED16100B9F65C /* LabelSliderAndTFBoard.swift */,
 				BD43B59D272D79EC00E9AADB /* Assets.xcassets */,
 				BD43B59F272D79EC00E9AADB /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4E9C6F272ED16100B9F65C /* LabelSliderAndTFBoard.swift in Sources */,
 				BD43B59C272D79EB00E9AADB /* ContentView.swift in Sources */,
 				BD43B59A272D79EB00E9AADB /* ColorizedAppSwiftUIApp.swift in Sources */,
 			);
