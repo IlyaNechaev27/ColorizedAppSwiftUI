@@ -8,43 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var redSliderValue: Double = 224
-    @State private var greenSliderValue: Double = 61
-    @State private var blueSliderValue: Double = 94
+    @State private var redSliderValue = Double.random(in: 0...255)
+    @State private var greenSliderValue = Double.random(in: 0...255)
+    @State private var blueSliderValue = Double.random(in: 0...255)
+    
+    @FocusState private var isInputActive: Bool
     
     var body: some View {
-        
-        ZStack {
-            LinearGradient(colors: [.mint, .purple], startPoint: .topLeading, endPoint: .bottomLeading)
-                .ignoresSafeArea()
+        NavigationView {
             
-            VStack {
-                Spacer()
+            ZStack {
+                LinearGradient(colors: [.mint, .purple], startPoint: .topLeading, endPoint: .bottomLeading)
+                    .ignoresSafeArea()
                 
-                RoundedRectangle(cornerRadius: 15)
-                    .foregroundColor(Color(red: redSliderValue / 255, green: greenSliderValue / 255, blue: blueSliderValue / 255))
-                    .overlay(RoundedRectangle(cornerRadius: 15).stroke(.white, lineWidth: 5))
+                VStack(spacing: 40) {
+                    
+                    ColorView(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue)
+                    
+                    VStack {
+                        SliderView(value: $redSliderValue, color: .red)
+                        SliderView(value: $greenSliderValue, color: .green)
+                        SliderView(value: $blueSliderValue, color: .blue)
+                    }
                     .frame(height: 150)
-                    .padding()
-                
-                Spacer()
-                
-                LabelSliderAndTFBoard(sliderColor: .red, sliderValue: $redSliderValue)
-                LabelSliderAndTFBoard(sliderColor: .green, sliderValue: $greenSliderValue)
-                LabelSliderAndTFBoard(sliderColor: .blue, sliderValue: $blueSliderValue)
-                
-                Spacer()
+                    .focused($isInputActive)
+                    .toolbar {
+                        ToolbarItemGroup(placement: .keyboard) {
+                            Spacer()
+                            
+                            Button("Done") {
+                                isInputActive = false
+                            }
+                        }
+                    }
+                    Spacer()
+                }
+                .padding()
             }
         }
-        .onTapGesture {
-            self.dismissKeyboard()
-        }
-    }
-}
-
-extension View {
-    func dismissKeyboard() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 

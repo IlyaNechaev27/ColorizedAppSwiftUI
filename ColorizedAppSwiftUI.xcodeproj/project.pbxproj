@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2F6EDA2731AD56000C958B /* ColorLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F6ED92731AD56000C958B /* ColorLabelView.swift */; };
+		BD2F6EDC2731AE0D000C958B /* ColorTFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F6EDB2731AE0D000C958B /* ColorTFView.swift */; };
+		BD2F6EDE2731B25C000C958B /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F6EDD2731B25C000C958B /* SliderView.swift */; };
+		BD2F6EE02731B4FB000C958B /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F6EDF2731B4FB000C958B /* ColorView.swift */; };
 		BD43B59A272D79EB00E9AADB /* ColorizedAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43B599272D79EB00E9AADB /* ColorizedAppSwiftUIApp.swift */; };
 		BD43B59C272D79EB00E9AADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43B59B272D79EB00E9AADB /* ContentView.swift */; };
 		BD43B59E272D79EC00E9AADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD43B59D272D79EC00E9AADB /* Assets.xcassets */; };
 		BD43B5A1272D79EC00E9AADB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD43B5A0272D79EC00E9AADB /* Preview Assets.xcassets */; };
-		BD4E9C6F272ED16100B9F65C /* LabelSliderAndTFBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4E9C6E272ED16100B9F65C /* LabelSliderAndTFBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD2F6ED92731AD56000C958B /* ColorLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLabelView.swift; sourceTree = "<group>"; };
+		BD2F6EDB2731AE0D000C958B /* ColorTFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTFView.swift; sourceTree = "<group>"; };
+		BD2F6EDD2731B25C000C958B /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		BD2F6EDF2731B4FB000C958B /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		BD43B596272D79EB00E9AADB /* ColorizedAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD43B599272D79EB00E9AADB /* ColorizedAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		BD43B59B272D79EB00E9AADB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD43B59D272D79EC00E9AADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD43B5A0272D79EC00E9AADB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BD4E9C6E272ED16100B9F65C /* LabelSliderAndTFBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSliderAndTFBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			children = (
 				BD43B599272D79EB00E9AADB /* ColorizedAppSwiftUIApp.swift */,
 				BD43B59B272D79EB00E9AADB /* ContentView.swift */,
-				BD4E9C6E272ED16100B9F65C /* LabelSliderAndTFBoard.swift */,
+				BD2F6ED92731AD56000C958B /* ColorLabelView.swift */,
+				BD2F6EDF2731B4FB000C958B /* ColorView.swift */,
+				BD2F6EDB2731AE0D000C958B /* ColorTFView.swift */,
+				BD2F6EDD2731B25C000C958B /* SliderView.swift */,
 				BD43B59D272D79EC00E9AADB /* Assets.xcassets */,
 				BD43B59F272D79EC00E9AADB /* Preview Content */,
 			);
@@ -140,9 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD4E9C6F272ED16100B9F65C /* LabelSliderAndTFBoard.swift in Sources */,
+				BD2F6EDA2731AD56000C958B /* ColorLabelView.swift in Sources */,
+				BD2F6EE02731B4FB000C958B /* ColorView.swift in Sources */,
 				BD43B59C272D79EB00E9AADB /* ContentView.swift in Sources */,
+				BD2F6EDE2731B25C000C958B /* SliderView.swift in Sources */,
 				BD43B59A272D79EB00E9AADB /* ColorizedAppSwiftUIApp.swift in Sources */,
+				BD2F6EDC2731AE0D000C958B /* ColorTFView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
